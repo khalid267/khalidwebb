@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العاب اينوف</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>العاب اينوف</h1>
+
+        <!-- القسم الأول: لعبة عجلة الحظ -->
+        <section class="game-section">
+            <h2>لعبة عجلة الحظ</h2>
+            <div class="wheel-container">
+                <div id="wheel" class="wheel">
+                    <div id="option1" class="option">تسويها</div>
+                    <div id="option2" class="option">ما تسويها</div>
+                </div>
+            </div>
+            <button id="spinButton" onclick="spinWheel()">دور العجلة</button>
+            <p id="wheelResult">النتيجة: </p>
+        </section>
+
+        <!-- القسم الثاني: عداد للنقرات -->
+        <section class="game-section">
+            <h2>تحدي عداد النقرات</h2>
+            <p>اضغط على الزر بأسرع ما يمكن قبل انتهاء الوقت!</p>
+            <button id="clickButton" onclick="incrementCounter()">اضغط هنا!</button>
+            <p>الوقت المتبقي: <span id="timer">10</span> ثوانٍ</p>
+            <p>عدد النقرات: <span id="counter">0</span></p>
+            <p id="clickChallengeResult"></p>
+        </section>
+
+        <!-- القسم الثالث: لعبة الأرقام العشوائية -->
+        <section class="game-section">
+            <h2>لعبة الأرقام العشوائية</h2>
+            <p>اضغط على الزر لعرض رقم عشوائي!</p>
+            <button onclick="generateRandomNumber()">عرض رقم عشوائي</button>
+            <p>الرقم العشوائي: <span id="randomNumber">0</span></p>
+        </section>
+
+        <!-- القسم الرابع: الانتقال إلى صفحة التحدي -->
+        <section class="game-section">
+            <h2>انتقل إلى التحدي</h2>
+            <a href="challenge.html">ابدأ التحدي هنا!</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
